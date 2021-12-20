@@ -12,7 +12,7 @@ body {
   margin-bottom: 260px;
 }
 .startup {
-  background: url(..//img/background.png) no-repeat center;
+  background: url(..//img/background.png) no-repeat;
 }
 .navigation a {
   text-decoration: none;

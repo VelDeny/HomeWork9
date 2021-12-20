@@ -8,12 +8,13 @@ body {
   margin: 0;
 }
 .header_startup {
-  padding-top: 40px;
   margin-bottom: 260px;
 }
 .startup {
   background: url(..//img/background.png) no-repeat center;
   background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 260px;
 }
 .navigation a {
   text-decoration: none;
@@ -34,7 +35,6 @@ body {
 }
 .wrapper {
   color: #ffffff;
-  padding-bottom: 260px;
 }
 .wrapper h1 {
   width: 585px;
@@ -76,10 +76,11 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
-.header_services {
+.services {
   padding-top: 98px;
+  padding-bottom: 105px;
 }
-.header_services h2 {
+.title_services {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
@@ -91,20 +92,22 @@ body {
   margin-bottom: 30px;
   position: relative;
 }
-.header_services h2::after {
+.title_services::after {
   position: absolute;
   content: "";
-  top: 50px;
-  left: 26px;
   height: 2px;
   width: 50px;
   background-color: black;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
 }
 .description {
   width: 475px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 70px;
   font-family: "Roboto Slab", serif;
   font-size: 16px;
@@ -116,7 +119,7 @@ body {
 .serv {
   width: 345px;
   text-align: center;
-  margin-bottom: 104px;
+  justify-content: space-between;
 }
 .serv:not(:last-child) {
   margin-right: 45px;
@@ -156,6 +159,6 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 105px;
+  margin-bottom: 0;
   color: #555555;
 }

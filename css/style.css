@@ -1,8 +1,9 @@
 * {
   box-sizing: border-box;
 }
-font-family: "Montserrat", sans-serif;
-font-family: "Roboto Slab", serif;
+body {
+  margin: 0;
+}
 body {
   margin: 0;
 }
@@ -18,10 +19,12 @@ body {
   color: #ffffff;
 }
 .menu {
-  margin-left: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400px;
+}
+.menu:not(:last-child) {
+  margin-right: 30px;
 }
 .container {
   width: 1150px;
@@ -67,7 +70,7 @@ body {
   border: 2px solid #ffffff;
 }
 .title {
-  margin-right: 480px;
+  margin-right: 510px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -76,13 +79,25 @@ body {
   padding-top: 98px;
 }
 .header_services h2 {
-  width: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 100px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: 2px solid black;
+  position: relative;
+}
+.header_services h2::after {
+  position: absolute;
+  content: "";
+  top: 50px;
+  left: 26px;
+  height: 2px;
+  width: 50px;
+  background-color: black;
 }
 .description {
   width: 475px;
@@ -90,6 +105,9 @@ body {
   margin-right: auto;
   text-align: center;
   margin-bottom: 70px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: #555555;
 }
 .container_serv {
   display: flex;
@@ -102,37 +120,41 @@ body {
 .serv:not(:last-child) {
   margin-right: 45px;
 }
-.link {
-  display: block;
-  height: 90px;
-  weight: 90px;
-  border: 1px solid #dddddd;
-  border-radius: 50px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 44px;
-  margin-bottom: 55px;
-}
-a.active {
-  background: #c0301c;
-}
 .support {
-  width: 48px;
-  height: 49px;
+  width: 90px;
+  height: 90px;
+  background: url(..//img/FA\ icon\ 3.png) no-repeat center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 .code {
-  weight: 53px;
-  height: 40px;
+  background: url(..//img/FA\ icon\ 2.png) no-repeat center;
+  width: 90px;
+  height: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 .font {
-  height: 40px;
-  weight: 43px;
+  background: url(..//img/FA\ icon.png) no-repeat center;
+  height: 90px;
+  width: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 .serv h3 {
   margin-top: 0;
   color: #555555;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
-serv p {
+.serv p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
   margin-top: 0;
+  margin-bottom: 105px;
   color: #555555;
 }
